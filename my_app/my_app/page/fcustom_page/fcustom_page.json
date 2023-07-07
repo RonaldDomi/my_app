@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2023-06-26 11:06:00.515600",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-06-26 11:52:44.073926",
+ "modified_by": "Administrator",
+ "module": "My App",
+ "name": "fcustom-page",
+ "owner": "Administrator",
+ "page_name": "fcustom-page",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Frape Created Page"
+}

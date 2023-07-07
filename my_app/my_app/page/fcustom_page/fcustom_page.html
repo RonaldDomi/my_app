@@ -1,0 +1,24 @@
+<div id="fcustom_page">
+    <div class="row">
+        {% for company in companies %}
+            <div class="col-12">
+                <div class="card" id="my_appLinkCompanyDeclarations" data-company-name="{{ company.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ company.companyname }}</h5>
+                        <button class="btn btn-danger my_appDeleteCompanyButton" data-company-name="{{ company.name }}">Delete Company</button>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="form-group">
+        <label for="my_appNewCompanyName">New Company Name</label>
+        <input type="text" class="form-control" id="my_appNewCompanyName" placeholder="Enter new company name">
+        <button id="my_appAddCompanyButton" class="btn btn-primary">Add Company</button>
+    </div>
+
+    <!-- <button id="my_appLinkUploadPage" class="btn btn-secondary">Go to Upload Page</button> -->
+    <!-- <button id="my_appLinkUploadForm" class="btn btn-secondary">Go to Upload Form</button> -->
+
+</div>

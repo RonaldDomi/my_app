@@ -1,0 +1,26 @@
+<div class="page-content">
+    <table>
+        <tr>
+            <th>Document Name</th>
+            <th>Attachment</th>
+        </tr>
+        {% for file in uploads %}
+            <tr>
+                <td>{{ file.file }}</td>
+                <td>
+                    {% if file.file %}
+                        <a href="{{ file.file }}" download>Download</a>
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <form id="update-form">
+
+        <label for="file-input">Upload File:</label>
+        <input type="file" id="file-input">
+
+        <button type="submit">Submit</button>
+    </form>
+</div>

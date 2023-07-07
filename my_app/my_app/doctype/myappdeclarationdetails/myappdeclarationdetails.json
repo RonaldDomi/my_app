@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-30 15:29:05.733144",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "declarationdetail_periodstart",
+  "declarationdetail_periodend",
+  "declarationid",
+  "declarationdetail_isdone",
+  "declarationdetail_file"
+ ],
+ "fields": [
+  {
+   "fieldname": "declarationid",
+   "fieldtype": "Link",
+   "label": "DeclarationId",
+   "options": "MyAppCompanyDeclarationType"
+  },
+  {
+   "fieldname": "declarationdetail_periodstart",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Period"
+  },
+  {
+   "fieldname": "declarationdetail_periodend",
+   "fieldtype": "Date",
+   "label": "End Period"
+  },
+  {
+   "default": "0",
+   "fieldname": "declarationdetail_isdone",
+   "fieldtype": "Check",
+   "label": "DoneStatus"
+  },
+  {
+   "fieldname": "declarationdetail_file",
+   "fieldtype": "Attach",
+   "label": "File"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-04 17:06:53.167285",
+ "modified_by": "Administrator",
+ "module": "My App",
+ "name": "MyAppDeclarationDetails",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
