@@ -22,13 +22,13 @@
   },
   {
    "fieldname": "declarationdetail_periodstart",
-   "fieldtype": "Date",
+   "fieldtype": "Text",
    "in_list_view": 1,
    "label": "Start Period"
   },
   {
    "fieldname": "declarationdetail_periodend",
-   "fieldtype": "Date",
+   "fieldtype": "Text",
    "label": "End Period"
   },
   {
@@ -45,7 +45,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-04 17:06:53.167285",
+ "modified": "2023-07-11 17:02:47.927908",
  "modified_by": "Administrator",
  "module": "My App",
  "name": "MyAppDeclarationDetails",

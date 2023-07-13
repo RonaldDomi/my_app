@@ -1,13 +1,14 @@
 <div id="declaration_details_page">
     <div class="row">
-        <h1>Declaration name: {{ declaration_details[0].declarationname }}</h1>
+        <h1>Declaration name:  {{ declaration_details[0].declarationtype_name }}</h1>
         {% for declaration in declaration_details %}
             <div class="col-12">
                 <div class="card" id="my_appLinkUpload">
                     <div class="card-body">
                         <h5 class="card-title">
                             {{ declaration.declarationdetail_periodstart }}
-                            {% if declaration.declarationdetail_file  %}
+                            <!-- {{ declaration }} -->
+                            {% if declaration.declarationdetail_file != None %}
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                                 <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l1.912 1.912 3.724-4.263a.267.267 0 0 1 .02-.023z"/>
@@ -32,8 +33,8 @@
             </div>
             <form id="update-form" data-declaration-detail-name="{{ declaration.name }}">
 
-                <label for="file-input">Upload File: {{declaration.name}}</label>
-                <input type="file" id="file-input">
+                <label for="file-input-{{ declaration.name }}">Upload File: {{declaration.name}}</label>
+                <input type="file" id="file-input-{{ declaration.name }}">
         
                 <button type="submit">Submit</button>
             </form>

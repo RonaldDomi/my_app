@@ -29,9 +29,10 @@ frappe.pages['declaration-details'].on_page_load = function(wrapper) {
     
         // get the selected document and the file
         var docname = $(this).data('declaration-detail-name');
-        var file = $('#file-input')[0].files[0];
-    
+        var file = $(this).find('input[type=file]')[0].files[0];
+        
         if (file) {
+            console.log('file not null')
             // upload the file
             let data = new FormData();
             data.append('file', file);
